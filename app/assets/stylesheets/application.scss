@@ -20,6 +20,11 @@
 // Google Font: overpass
 //@import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
 
+// I do not know what is causing the horizontal scroll to appear
+body {
+    overflow-x: hidden;
+}
+
 .clear {
     clear: both;
 }
@@ -88,6 +93,11 @@ h2 {
     letter-spacing: -1.5px;
 }
 
+h2 span {
+    color: #dddddd;
+    font-family: "quicksanditalic", sans-serif;
+}
+
 .next-quote {
     color: #F84342;
     font-family: "quicksanditalic", sans-serif;
@@ -103,4 +113,18 @@ h2 {
 
 .about {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+}
+
+.modal {
+    font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+}
+
+@media (max-width: 750px) {
+    .footer-blurb {
+        text-align: left;
+        }
+}
+
+::selection {
+    background-color: #f84342;
 }
